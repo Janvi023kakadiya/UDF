@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap</title>
+</head>
+
+<body>
+    <h1>Swap a Number</h1>
+    <p id="swapnum"></p>
+
+    <script>
+        function swap(j, k) {
+
+            [j, k] = [k, j];
+
+            document.getElementById('swapnum').innerHTML = "Swapped values are: " + j + " , " + k;
+        }
+
+        swap(23, 31);
+    </script>
+</body>
+
+</html>

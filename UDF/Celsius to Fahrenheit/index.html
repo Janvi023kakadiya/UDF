@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit</title>
+</head>
+
+<body>
+    <h1>Celsius to Fahrenheit</h1>
+    <p id="result"></p>
+
+    <script>
+        function celsius(c) {
+
+            let f = (c * 1.8) + 32;
+
+            return f;
+        }
+        let convert = celsius(33);
+        document.getElementById("result").innerHTML = "Celsius to Fahrenheit is = " + convert + "'f";
+    </script>
+</body>
+
+</html>

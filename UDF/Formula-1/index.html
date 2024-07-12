@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula</title>
+</head>
+
+<body>
+    <h1>Formula</h1>
+    <p id="value"></p>
+    <script>
+        function calvalue(a, b, c) {
+            let ans = ((b * b) - (4 * a * c)) / (2 * a);
+            return ans;
+        }
+        let a = 12;
+        let b = 4;
+        let c = 8;
+
+        let result = calvalue(a, b, c);
+
+        document.getElementById('value').innerHTML = " a = " + a + ", b = " + b + ", and c = " + c + ", <p>((b*b) - (4*a*c)) / (2*a) = " + result;
+    </script>
+</body>
+
+</html>

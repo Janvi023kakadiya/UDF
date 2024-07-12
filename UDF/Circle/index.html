@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+</head>
+
+<body>
+    <h1>Area of Circle</h1>
+    <p id="circle"></p>
+
+    <script>
+        function circlearea(r) {
+            const pi = 3.14;
+            let ans = pi * r * r;
+            return ans;
+        }
+        let area = circlearea(8);
+        document.getElementById('circle').innerHTML = "Circle =  " + area;
+    </script>
+</body>
+
+</html>
